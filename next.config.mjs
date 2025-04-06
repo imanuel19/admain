@@ -22,10 +22,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Cloudflare Pages specific configuration
+  output: 'standalone',
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
+    parallelServerCompiles: true
   },
 }
 

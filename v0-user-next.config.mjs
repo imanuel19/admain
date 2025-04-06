@@ -17,12 +17,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    suppressDeprecationWarnings: true,
-    logging: {
-      level: 'error'
-    }
-  },
+  experimental: {},
 }
 
 mergeConfig(nextConfig, userConfig)
