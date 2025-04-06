@@ -8,7 +8,7 @@
         "start": "next start",
         "lint": "next lint",
         "pretty": "prettier --write . --ignore-path .gitignore",
-        "build:cloudflare": "next build --debug && npx @cloudflare/next-on-pages@1 --verbose"
+        "build:cloudflare": "next build --debug && npx @cloudflare/next-on-pages@1"
     },
     "dependencies": {
         "@radix-ui/react-dialog": "^1.0.5",
