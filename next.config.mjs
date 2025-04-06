@@ -11,9 +11,15 @@ const nextConfig = {
   },
   // Cloudflare Pages optimized configuration
   output: 'standalone',
+  outputFileTracingExcludes: {
+    '*': [
+      'node_modules/@swc/core-linux-x64-gnu',
+      'node_modules/@swc/core-linux-x64-musl'
+    ]
+  },
   experimental: {
     webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
+    parallelServerBuildTraces: true, 
     parallelServerCompiles: true
   }
 }
